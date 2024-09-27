@@ -10,8 +10,6 @@ class WeatherService {
   final String apiKey;
 
   WeatherService(this.apiKey);
-
-  /// Fetches current weather data for a given city
   Future<Weather> getWeather(String cityName) async {
     try {
       final response = await http.get(
